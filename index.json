@@ -1,0 +1,22 @@
+{
+    "name": "Amy's Repo",
+    "path": "emotes",
+    "emotes" : [
+        {
+            "name": "fem-love",
+            "type": ".png"
+        },
+        {
+            "name": "blush",
+            "type": ".png"
+        },
+        {
+            "name": "02boba",
+            "type": ".png"
+        },
+        {
+            "name": "fbk_shake",
+            "type": ".gif"
+        }
+    ]
+}
