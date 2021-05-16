@@ -3,18 +3,26 @@
  1. At the repo's root, create an `index.json` like so: 
     ```json
     {
-        "name": "Amy's Repo", 
-        "path": "emotes", 
-        "emotes" : [
-            {
+       "name": "Amy's Repo",
+       "path": "emotes",
+       "emotes" : [
+           {
+               "name": "fem-love",
+               "type": ".png"
+           },
+           {
+               "name": "blush",
+               "type": ".png"
+           },
+           {
                "name": "02boba",
-               "type": ".png",
-            },
-            {
+               "type": ".png"
+           },
+           {
                "name": "fbk_shake",
-               "type": ".gif",
-            },
-        ],
+               "type": ".gif"
+           }
+       ]
     }
     ```
 2. Also at the repo's root, add an `RepoImage.png` that will serve as the icon
