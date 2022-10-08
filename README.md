@@ -1,6 +1,6 @@
 # Making your own Nitroless repo
 
- If you'd like to make your own collection of emotes for Nitroless, make a fork of this repo and follow the steps below!
+ If you'd like to make your own collection of emotes for Nitroless, make a fork of this repo by pressing `Use this template` and follow the steps below!
 
  1. You'll want to have Node JS installed to run the automated script to generate the manifest JSON and resize emotes automatically. You can download it [here](https://nodejs.org/en/download/).
 
