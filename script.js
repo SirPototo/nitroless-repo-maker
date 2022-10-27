@@ -1,11 +1,12 @@
 const head = document.getElementsByTagName("head")[0];
 const body = document.getElementsByTagName("body")[0];
+const fullURL = document.location.href;
 
 fetch("./index.json")
 .then(response => response.json())
 .then(json => {
     const data = json;
-    const { name, icon, path, emotes, fullURL } = data;
+    const { name, icon, path, emotes } = data;
 
     //Set title for the Website dynamically
     document.title = name;
