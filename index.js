@@ -15,9 +15,23 @@ emotesFileData = {
 
 // check if repoData.js has author defined
 let data = require('./repoData.js');
-if (data.author !== null) {
+if (data['author'] !== null && data['author'] !== undefined && 'author' in data) {
 	emotesFileData.author = data.author;
 }
+
+if (data['description'] !== null && data['description'] !== undefined && 'description' in data) {
+	emotesFileData.description = data.description;
+}
+
+if (data['keywords'] !== null && data['keywords'] !== undefined && 'keywords' in data) {
+	emotesFileData.keywords = data.keywords;
+}
+
+const pngToIco = require('png-to-ico');
+
+pngToIco(icon).then(buf => {
+    fs.writeFileSync('favicon.ico', buf);
+}).catch(console.error);
 
 fs.readdir(emotesFolder, (err, files) => {
 	if (err) console.error(err.message);

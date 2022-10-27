@@ -8,12 +8,14 @@
  ```js
 //Add Name of your Repo here
 exports.name = `Example Repo`;
-//Add Name and Type of Image Icon you want to use here
+//Add Name and Type of Image Icon you want to use here, icon must be png
 exports.icon = 'CoolIcon.png';
 //Add the folder name where all your emotes are saved
 exports.pathName = 'emotes';
 //Add your name here, or remove the line if you don't need your name displayed under the repo's title in our clients
 exports.author = 'Joe';
+//Add your description here, or remove the line if you don't need any description for your repo, this is useful for SEO and Web Crawlers
+exports.description = 'Cool Description';
 ```
 
 3. Add all of your emotes to the folder you're using. Make sure they're all PNGs, JPGs or GIFs. 
