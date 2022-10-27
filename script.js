@@ -1,4 +1,4 @@
-import data from './index.json' assert { type: 'json' };
+import data from './index.json';
 const head = document.getElementsByTagName("head")[0];
 const { name, icon, path, emotes, fullURL } = data;
 
