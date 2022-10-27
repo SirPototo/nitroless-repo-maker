@@ -1,6 +1,6 @@
 import data from './index.json' assert { type: 'json' };
 const head = document.getElementsByTagName("head")[0];
-const { name, icon, path, emotes } = data;
+const { name, icon, path, emotes, fullURL } = data;
 
 //Set title for the Website dynamically
 document.title = name;
@@ -44,14 +44,14 @@ body.innerHTML =
     </div>
     <div class='contentContainer'>
         <div class='content'>
-            <span>URL - <strong>${window.location.protocol}//${window.location.hostname}</strong></span>
+            <span>URL - <strong>${fullURL}</strong></span>
             <span>Number of Emotes - <strong>${emotes.length}</strong></span>
             <button id="addRepo" class='btn'>Add to <span>Nitroless</span></button>
         </div>
         <div class='content emotes'>
             ${emotes.map((emote) => {
                 return `
-                <div id='${window.location.protocol}//${window.location.hostname}/${path}/${emote.name}.${emote.type}' class='emote'>
+                <div id='${fullURL}/${path}/${emote.name}.${emote.type}' class='emote'>
                     <img src='./${path}/${emote.name}.${emote.type}' alt='${emote.name}' />
                 </div>
                 `
